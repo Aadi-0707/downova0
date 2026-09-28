@@ -1,0 +1,189 @@
+{
+  "app": {
+    "name": "DOWNOVA",
+    "font_family": "Roboto",
+    "default_route": "splash"
+  },
+  "theme": {
+    "default_mode": "dark",
+    "background_when_image_missing": {
+      "light": "#F1F6FF",
+      "dark": "#020421"
+    },
+    "modes": {
+      "dark": {
+        "brightness": "dark",
+        "primary": "#8B5CF6",
+        "secondary": "#22D3EE",
+        "accent": "#FBBF24",
+        "background": "#020421",
+        "surface": "#071039",
+        "surface_variant": "#101A52",
+        "text_primary": "#FFFFFF",
+        "text_secondary": "#AFC2E8",
+        "text_on_primary": "#FFFFFF",
+        "border": "#2447A8"
+      },
+      "light": {
+        "brightness": "light",
+        "primary": "#6D4AFF",
+        "secondary": "#0891B2",
+        "accent": "#B45309",
+        "background": "#F1F6FF",
+        "surface": "#EAF1FF",
+        "surface_variant": "#DCE8FF",
+        "text_primary": "#0A1026",
+        "text_secondary": "#465475",
+        "text_on_primary": "#FFFFFF",
+        "border": "#A9BFEA"
+      }
+    }
+  },
+  "api": {
+    "base_url": "https://backend.instadownloader.app/api",
+    "endpoints": {
+      "facebook": "/facebook/download",
+      "instagram": "/instagram/download",
+      "pinterest": "/pinterest/download",
+      "x": "/x/download"
+    }
+  },
+  "assets": {
+    "app_logo": "assets/images/app_logo.png",
+    "splash": {
+      "dark": "assets/images/splash_dark.png",
+      "light": "assets/images/splash_light.png"
+    },
+    "home": {
+      "dark": "assets/images/home_dark.png",
+      "light": "assets/images/home_light.png"
+    },
+    "platform_logos": {
+      "instagram": "assets/images/insta_logo.png",
+      "facebook": "assets/images/facebook_logo.png",
+      "pinterest": "assets/images/pinterest_logo.png",
+      "x": "assets/images/twitter_logo.png"
+    }
+  },
+  "splash": {
+    "show_loading_indicator": true,
+    "loading_text": "Loading amazing content...",
+    "version_text": "Version 1.0",
+    "title": "DOWNOVA",
+    "tagline": "Download • Save • Enjoy",
+    "content_alignment": "center"
+  },
+  "home": {
+    "background_image_enabled": true,
+    "header": {
+      "menu_icon": "menu",
+      "settings_icon": "settings_outlined"
+    },
+    "hero": {
+      "title": "DOWNOVA",
+      "title_gradient_start": "#FFFFFF",
+      "title_gradient_end": "#22D3EE",
+      "subtitle": "Download Anything",
+      "tagline": "Fast • HD Quality • Free"
+    },
+    "input": {
+      "hint": "Paste your link here...",
+      "link_icon": "link",
+      "paste_icon": "content_paste_outlined"
+    },
+    "download_button": {
+      "text": "Download",
+      "icon": "download",
+      "gradient_start": "#FF4FD8",
+      "gradient_middle": "#6D20FF",
+      "gradient_end": "#00C6FF"
+    },
+    "platforms": {
+      "items": [
+        {
+          "id": "instagram",
+          "name": "Instagram",
+          "endpoint": "instagram",
+          "logo": "assets/images/insta_logo.png",
+          "icon": "camera_alt"
+        },
+        {
+          "id": "facebook",
+          "name": "Facebook",
+          "endpoint": "facebook",
+          "logo": "assets/images/facebook_logo.png",
+          "icon": "facebook"
+        },
+        {
+          "id": "pinterest",
+          "name": "Pinterest",
+          "endpoint": "pinterest",
+          "logo": "assets/images/pinterest_logo.png",
+          "icon": "push_pin"
+        },
+        {
+          "id": "x",
+          "name": "X",
+          "endpoint": "x",
+          "logo": "assets/images/twitter_logo.png",
+          "icon": "close"
+        }
+      ]
+    },
+    "recent_downloads": {
+      "enabled": true,
+      "title": "Recent Downloads",
+      "see_all": "See all",
+      "empty_text": "Your recent downloads will appear here"
+    },
+    "bottom_navigation": {
+      "items": [
+        {
+          "id": "home",
+          "label": "Home",
+          "icon": "home_outlined",
+          "active_icon": "home"
+        },
+        {
+          "id": "downloads",
+          "label": "Downloads",
+          "icon": "download_outlined",
+          "active_icon": "download"
+        },
+        {
+          "id": "history",
+          "label": "History",
+          "icon": "history",
+          "active_icon": "history"
+        },
+        {
+          "id": "settings",
+          "label": "Settings",
+          "icon": "settings_outlined",
+          "active_icon": "settings"
+        }
+      ]
+    },
+    "download_success_text": "Download request completed successfully",
+    "download_error_text": "Unable to complete the download request"
+  },
+  "platform_detection": {
+    "instagram": [
+      "instagram.com",
+      "instagr.am"
+    ],
+    "facebook": [
+      "facebook.com",
+      "fb.watch",
+      "fb.com"
+    ],
+    "pinterest": [
+      "pinterest.com",
+      "pin.it"
+    ],
+    "x": [
+      "x.com",
+      "twitter.com"
+    ]
+  }
+}
